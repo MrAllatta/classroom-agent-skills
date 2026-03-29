@@ -1,0 +1,30 @@
+# Academic calendar — TEMPLATE
+# Copy to data/school/calendar_<school_year>.yaml
+# Add events from your official calendar; inclusive ISO dates (YYYY-MM-DD).
+
+school_year: "2026-27"
+calendar_system: YOUR_AUTHORITY
+timezone: America/New_York
+source_note: Replace with provenance (official PDF, district site, etc.).
+
+generated_by: teacher-template
+generated_at: "2026-03-28T00:00:00Z"
+
+events:
+  - id: first_day_of_school
+    title: First Day of School
+    status: school_opens
+    start_date: "2026-09-01"
+    end_date: "2026-09-01"
+
+  - id: example_holiday
+    title: Example No-School Day
+    status: no_school
+    start_date: "2026-11-11"
+    end_date: "2026-11-11"
+
+  - id: last_day_of_regular_instruction
+    title: Last Day of Regular Instruction
+    status: regular_instruction_ends
+    start_date: "2027-06-15"
+    end_date: "2027-06-15"

@@ -1,0 +1,35 @@
+# Student profile — TEMPLATE
+# 1) Copy to data/students/<OPAQUE_ID>.yaml (e.g. 1000001.yaml) — use IDs your district allows in this context.
+# 2) Replace placeholders. Do not commit real PII to public repositories.
+# 3) Full field reference: data/schema/student_profile.yaml
+
+student_id: "OPAQUE_ID"
+last_name: PLACEHOLDER
+first_name: PLACEHOLDER
+preferred_name: null
+grade: 9
+
+sections:
+  - SEC-01
+
+homeroom: null
+
+plan_type: none
+disability_category: null
+case_manager: null
+
+accommodations: []
+
+# compliance: reserved in schema for future IEP/504 date tracking — not wired in workflows yet; leave {} or omit until you implement it.
+compliance: {}
+
+contacts: []
+
+performance_tier: null
+mastery_by_standard: {}
+intervention_flags: []
+
+communication_log: []
+
+meta:
+  note: Remove or replace this block if your workflow does not use file-level meta.

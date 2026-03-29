@@ -1,0 +1,46 @@
+# Section — TEMPLATE
+# Copy to data/sections/<your_section_slug>.yaml
+
+section:
+  id: SEC-01
+  course: Your Course Title
+  course_code: YOUR_OFFICIAL_CODE
+  course_scope_id: example_course
+  period: 1
+  room: TBD
+  grade_levels: [9]
+  standards_framework: YOUR_STANDARDS_FRAMEWORK
+  ap_course: false
+  semester_structure: full_year
+
+enrollment:
+  target_size: 0
+  actual_size: 0
+  roster_compiled_at: "YYYY-MM-DD"
+  roster_derivation: >-
+    List opaque student_ids only. Reconcile with student files under data/students/.
+  student_ids: []
+  note: Add IDs after creating de-identified student YAML files.
+
+staffing:
+  teacher: YOUR_NAME
+  co_teacher: null
+  ict_model: false
+  paraprofessional: null
+
+special_education:
+  estimated_iep_count: 0
+  estimated_504_count: 0
+  estimated_percent_with_plan: 0
+  common_accommodation_codes: []
+  differentiation_note: >
+    Section-level planning note (aggregate only; no student names).
+  ict_model: false
+  co_teacher_coverage: none
+
+pacing:
+  curriculum_reference: data/courses/example_course/scope.yaml
+  pacing_guide: null
+
+notes: >
+  Optional section-specific constraints (lab days, shared cart, etc.).

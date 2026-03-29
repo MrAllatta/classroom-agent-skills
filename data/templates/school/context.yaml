@@ -1,0 +1,58 @@
+# School context — TEMPLATE
+# Copy to data/school/context.yaml and replace all placeholders.
+# Fictional school name below is intentional (public-safe default).
+
+school:
+  # Fictional placeholder — replace with your school or your own clearly fictional label.
+  name: Metropolitan Lab High School (sample)
+  short_name: MLHS_SAMPLE
+  district: YOUR_DISTRICT_NAME
+  borough_or_region: YOUR_REGION
+  grades: [9, 10, 11, 12]
+  type: public  # e.g. public, charter, private — adjust
+
+population:
+  description: >
+    Brief, honest description of who typically walks through the door:
+    prior preparation, language diversity, honors pathways, etc.
+  gen_ed_pathway: YOUR_LABEL
+  sped_pathway: YOUR_LABEL
+  note: >
+    Do not infer support needs from pathway labels alone.
+
+special_education:
+  governing_framework: IDEA
+  local_system: YOUR_SIS_OR_CASE_SYSTEM  # e.g. SESIS, Frontline, manual
+  sesis_integration_status: not_connected
+  plan_types:
+    - code: IEP
+      label: Individualized Education Program
+      legal_basis: IDEA Part B
+    - code: "504"
+      label: Section 504 Accommodation Plan
+      legal_basis: Rehabilitation Act Section 504
+    - code: none
+      label: No formal plan
+
+compliance:
+  annual_review_tracking: placeholder
+  triennial_evaluation_tracking: placeholder
+
+privacy:
+  ferpa_applies: true
+  data_access_policy: >
+    Follow district policy for tools and AI. Prefer local tools over pasting
+    student records into chat.
+  student_data_directory: data/students/
+  production_gate: locked  # unlock only when safeguards are verified
+
+academic_calendar:
+  system: YOUR_CALENDAR_AUTHORITY
+  year: "2026-27"
+  calendar_reference: data/school/calendar_2026-27.yaml
+  note: Align calendar_reference with the filename you use.
+
+teacher:
+  name: YOUR_FIRST_NAME_OR_LABEL
+  role: classroom_teacher
+  co_teacher_agent: optional_label_for_agent_persona

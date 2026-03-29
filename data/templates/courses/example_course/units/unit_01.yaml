@@ -1,0 +1,66 @@
+# Unit plan — TEMPLATE (UDL + backward design)
+# Copy to data/courses/<course_id>/units/unit_01.yaml
+# See data/schema/unit_plan_udl.yaml for full field meanings.
+
+course_id: example_course
+unit_number: 1
+title: "Unit 1 — Replace with your title"
+school_year: "2026-27"
+instructional_days: 10
+essential_questions:
+  - What should students understand by the end of this unit?
+standards_focus:
+  - STANDARD-CODE-1
+
+backward_plan:
+  transfer_goal: "Students can … (one sentence, novel context)."
+  enduring_understandings:
+    - Big idea students should retain.
+  summative:
+    instrument: end_of_unit_test
+    student_facing_name: Unit 1 assessment
+    claims:
+      - Observable claim tied to standards.
+    success_criteria:
+      - Criteria students can recognize as "done."
+    aligned_standards:
+      - STANDARD-CODE-1
+  formative_checkpoints:
+    - checkpoint_id: fc_mid
+      label: Mid-unit check
+      purpose: Monitors summative claim(s) above.
+      evidence_type: exit_ticket
+      approximate_timing: after lesson 3
+      feedback_loop: Reteach or small group as needed.
+  prerequisite_gaps_to_monitor:
+    - Prior skill or concept that often blocks success (aggregate; no names).
+
+udl:
+  engagement:
+    recruiting_interest:
+      - Choice or relevance strategy.
+    sustaining_effort_persistence:
+      - Scaffold for persistence or goals.
+    self_regulation:
+      - Reflection or strategy routine.
+  representation:
+    perception:
+      - Alternative format for key ideas (visual, audio, etc.).
+    language_symbols:
+      - Vocabulary or notation support.
+    comprehension:
+      - Sense-making or organizer strategy.
+  action_expression:
+    physical_action:
+      - Non default response mode if applicable.
+    expression_communication:
+      - Oral, written, or digital options.
+    executive_functions:
+      - Checklist, chunking, or model work.
+
+lessons: []
+
+section_implementation_notes: >
+  Optional: lab, ICT, or room constraints (aggregate; avoid PII).
+
+core_resources: []

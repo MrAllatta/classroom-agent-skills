@@ -1,0 +1,19 @@
+---
+description: Canonical data/ vs exports and deliverables/ — editing discipline
+globs:
+alwaysApply: true
+---
+
+# Canonical `data/` vs `deliverables/`
+
+Structured school and course metadata treated as **canonical** (authoritative for planning) lives under **`data/`** (for example `data/courses/*/scope.yaml`, `data/school/calendar*.yaml`, `data/sections/*.yaml`). Paths are illustrative; your project may use a different layout if you map concepts consistently.
+
+**`deliverables/`** (when present) holds **exports, mirrors, and snapshots** that may legitimately **lag** behind `data/`. Staleness is expected.
+
+## Editing discipline
+
+When you update canonical files under **`data/`**, refresh **`deliverables/`** only when the user asks to save or regenerate named export paths, or when the task’s acceptance criteria name those outputs.
+
+Exports may **lag** canonical `data/` by design. If a comment in `data/` mentions a path under `deliverables/`, treat it as a **snapshot or mirror**—update it only when a workflow explicitly calls for that export.
+
+Longer context: [`ADOPTION.md`](../../ADOPTION.md) (canonical data section).

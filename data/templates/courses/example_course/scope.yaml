@@ -1,0 +1,23 @@
+# Course scope — TEMPLATE (single sample unit)
+# Copy tree to data/courses/<course_id>/scope.yaml
+
+course_id: example_course
+course: Example Course Title
+sections: [SEC-01]
+school_year: "2026-27"
+standards_framework: YOUR_FRAMEWORK
+total_instructional_days: 180
+summative_model: end_of_unit_test
+generated_by: teacher
+generated_at: "2026-03-28T00:00:00Z"
+
+units:
+  - unit_number: 1
+    title: "Unit 1 — Replace with your title"
+    instructional_days: 10
+    summative_assessment: end_of_unit_test
+    ccss_standards:
+      - STANDARD-CODE-1
+      - STANDARD-CODE-2
+    essential_questions:
+      - What should students understand by the end of this unit?
